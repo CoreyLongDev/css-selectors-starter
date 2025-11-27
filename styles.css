@@ -136,7 +136,7 @@ h1{
     select both the h1 and h2 tags on the page by tag name
 */
 /* ----- */
-h1, h2{
+h1, h2, h3{
     grid-column: 1/-1;
     text-align: center;
     font-weight: bold;
@@ -539,7 +539,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the unordered list in the list styling container using the id and tag name selectors
 */
 /* ----- */
-#list-ul{
+#list ul{
     display: block;
     width: fit-content;
     margin: 32px auto;
@@ -551,7 +551,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select all of the list items in the list styling container using the ID and tag name selectors
 */
 /* ----- */
-#list-li{
+#list li{
     font-size: 1.25rem;
     line-height: 1.35;
     margin-bottom: 8px;
@@ -674,7 +674,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the section with the ID of software by its ID 
 */
 /* ----- */
-{
+#software{
     margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -687,7 +687,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the links in the software section using the ID, tag name, and child/descendant selector
 */
 /* ----- */
-{
+#software a{
     width: 100px;
     height: auto;
     margin: 0 auto;
@@ -702,7 +702,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the links in the software section on hover using the ID, tag name, child/descendant selector, and pseudo-class selector
 */
 /* ----- */
-{
+#software a:hover{
     background-color: var(--dk-gray);
     box-shadow: var(--box-shadow-sm);
 }
@@ -713,7 +713,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the SVGs in the software section using the ID, tag name, and descendant selectors
 */
 /* ----- */
-{
+#software svg{
     stroke: var(--dk-gray);
 }
 
@@ -736,7 +736,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the table in the table styles section using the element/tag name selector
 */
 /* ----- */
-{ 
+table{ 
     border-collapse: collapse;
     width: 100%;
 }
@@ -747,7 +747,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the caption in the table styles section using the element/tag name selector
 */
 /* ----- */
-{ 
+caption{ 
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: 8px;
@@ -759,7 +759,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the table header cells in the table styles section using the element/tag name, descendant, and ID selectors
 */
 /* ----- */
-{ 
+#table th{ 
     background-color: var(--blue);
     color: var(--white);
 }
@@ -770,7 +770,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-{ 
+tbody tr:nth-child(odd){ 
     background-color: var(--dv-orange);
 }
 
@@ -780,7 +780,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-{ 
+tbody td:first-child{ 
     font-weight: bold;
 }
 
@@ -790,7 +790,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the table heading cells (th) and the table data cells in the table styles section using the element/tag name and multiple element selectors
 */
 /* ----- */
-{ 
+th, td{ 
     border: 1px solid var(--dk-gray);
     padding: 4px;
 }
@@ -801,7 +801,7 @@ button[type="submit"]:focus, input[type="submit"]:focus{
     select the table footer in the table styles section using the element/tag name selector
 */
 /* ----- */
-{ 
+tfoot{ 
     font-weight: bold;
 }
 
